@@ -14,13 +14,7 @@ export default function Background({
   return (
     <Suspense fallback={null}>
       <div className="background-container">
-        <Image
-          src={src}
-          alt={alt}
-          height={height}
-          width={width}
-          layout="responsive"
-        />
+        <Image src={src} alt={alt} height={height} width={width} />
         {overlay && (
           <div
             className="background-overlay"

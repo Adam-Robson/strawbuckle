@@ -1,5 +1,7 @@
+import Link from "next/link";
 import AudioPlayer from "./_components/audio-player/AudioPlayer";
 import Background from "./_components/Background";
+import Logo from "./_components/Logo";
 import Navigation from "./_components/Navigation";
 import { AudioProvider } from "./_contexts/AudioProvider";
 import "./page.css";
@@ -7,13 +9,16 @@ import "./page.css";
 export default function Home() {
   return (
     <div className="homepage-container">
-      <header>
+      <header className="header-container">
+        <Link href="/">
+          <Logo src="/bow.webp" alt="le fog logo" height={160} width={160} />
+        </Link>
         <Navigation />
       </header>
-      <main>
+      <main className="homepage-content">
         <Background src="/fishhed.webp" alt="le fog" height={900} width={900} />
       </main>
-      <footer className="footer">
+      <footer className="homepage-footer">
         <AudioProvider>
           <AudioPlayer />
         </AudioProvider>
