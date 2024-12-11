@@ -1,0 +1,25 @@
+:root {
+  --text: #01161eff;
+  --background: #f9fafbff;
+  --primary: #857e61ff;
+  --secondary: #819595ff;
+  --accent: #8d818cff;
+  --complement: #2a2b2eff;
+  --highlight: #e5ecf4ff;
+  --dust: #e6ebe0ff;
+  --light: #b1b6a6ff;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background: #01161eff;
+    --text: #f9fafbff;
+    --primary: #b1b6a6ff;
+    --secondary: #e6ebe0ff;
+    --accent: #8d818cff;
+    --complement: #e5ecf4ff;
+    --highlight: #2a2b2eff;
+    --light: #819595ff;
+    --dust: #857e61ff;
+  }
+}

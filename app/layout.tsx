@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { sofia, sofia_italic, specialElite } from "@/_fonts/fonts";
+
 import "./globals.css";
+import "./colors.css";
+import "./page.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
