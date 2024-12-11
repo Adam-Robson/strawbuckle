@@ -36,3 +36,13 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+.page-title {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: var(--font-special-elite);
+  text-align: center;
+  padding-top: 9rem;
+}

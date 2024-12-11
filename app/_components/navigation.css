@@ -23,6 +23,7 @@
   transition: all 0.5s ease-in-out;
   animation: smoothColorCycle 13s ease-in-out infinite,
     opacityCycle 8s ease-in-out infinite;
+  font-family: var(--font-ruda);
 }
 
 @media (min-width: 568px) {

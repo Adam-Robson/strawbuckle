@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { sofia, sofia_italic, specialElite } from "@/_fonts/fonts";
+import { specialElite } from "@/_fonts/fonts";
 
 import "./globals.css";
 import "./colors.css";
@@ -16,12 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${sofia.variable} ${sofia_italic.variable} ${specialElite.variable}`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={specialElite.className}>
+      <body>{children}</body>
     </html>
   );
 }

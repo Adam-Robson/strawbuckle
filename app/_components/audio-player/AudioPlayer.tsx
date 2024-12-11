@@ -16,15 +16,16 @@ export default function AudioPlayer() {
         className={`audio-player-card shadow-xl ${isVisible ? "visible" : ""}`}
       >
         <AudioPlaylist />
-        {playback && (
-          <>
-            <>{song.title}</>
-            <hr />
-            <>
-              {elapsed} / {duration}
-            </>
-          </>
-        )}
+        <div className="now-playing-container">
+          {playback && (
+            <div>
+              <div>{song.title}</div>
+              <div>
+                {elapsed} / {duration}
+              </div>
+            </div>
+          )}
+        </div>
         <AudioControls />
       </div>
       <AudioPlayerToggle isVisible={isVisible} setIsVisible={setIsVisible} />

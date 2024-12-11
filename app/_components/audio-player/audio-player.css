@@ -4,10 +4,10 @@
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  max-width: 23rem;
+  max-width: 30rem;
   width: 100%;
   opacity: 0.85;
-  color: var(--aaa);
+  color: var(--background);
 }
 
 .audio-player-card {
@@ -16,23 +16,20 @@
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-  min-width: 23rem;
+  min-width: 26rem;
   width: 100%;
-  max-width: 22rem;
-  min-height: 18rem;
-  margin: 0 auto;
+  max-width: 30rem;
+  min-height: 23rem;
   visibility: hidden;
   z-index: 10;
   background-color: var(--accent);
-  color: var(--aaa);
+  color: var(--background);
   border-radius: 0.76rem;
   backdrop-filter: blur(13px);
   transition: all 1.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .audio-player-card.visible {
@@ -41,7 +38,7 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.75s ease-in-out;
-  color: var(--aaa);
+  color: var(--background);
 }
 
 .audio-toggle-container {
@@ -72,6 +69,12 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+.now-playing {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
 .audio-toggle-button:hover .audio-toggle-label {
   opacity: 1;
 }

@@ -4,6 +4,7 @@ import Background from "./_components/Background";
 import Logo from "./_components/Logo";
 import Navigation from "./_components/Navigation";
 import { AudioProvider } from "./_contexts/AudioProvider";
+import { specialElite } from "./_fonts/fonts";
 import "./page.css";
 
 export default function Home() {
@@ -16,7 +17,13 @@ export default function Home() {
         <Navigation />
       </header>
       <main className="homepage-content">
-        <Background src="/fishhed.webp" alt="le fog" height={900} width={900} />
+        <Background
+          src="/fishhed.webp"
+          alt="le fog"
+          height={1200}
+          width={1200}
+        />
+        <h1 className={`page-title ${specialElite.className}`}>le fog</h1>
       </main>
       <footer className="homepage-footer">
         <AudioProvider>
