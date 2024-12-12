@@ -22,7 +22,7 @@
   min-height: 23rem;
   visibility: hidden;
   z-index: 10;
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: var(--background);
   border-radius: 0.76rem;
   backdrop-filter: blur(13px);

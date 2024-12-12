@@ -6,3 +6,45 @@
   color: var(--text);
   background-color: var(--background);
 }
+
+body {
+  font-weight: 300;
+  font-family: var(--font-ruda);
+  overflow-y: hidden;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: 500;
+  translate: scale(1.1);
+}
+
+.button {
+  font-family: var(--font-ruda);
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--text);
+  background-color: var(--background);
+  border: 1px solid var(--text);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.button:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}

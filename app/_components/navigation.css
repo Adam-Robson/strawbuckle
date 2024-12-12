@@ -17,7 +17,7 @@
 }
 
 .navlink {
-  font-size: 0.98rem;
+  font-size: 1.34rem;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -42,11 +42,11 @@ button:hover,
 @keyframes smoothColorCycle {
   0%,
   100% {
-    color: var(--highlight);
+    color: var(--text);
     filter: brightness(0.9);
   }
   50% {
-    color: var(--dust);
+    color: var(--accent);
     filter: brightness(1);
   }
 }

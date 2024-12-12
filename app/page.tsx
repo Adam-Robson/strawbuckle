@@ -17,13 +17,12 @@ export default function Home() {
         <Navigation />
       </header>
       <main className="homepage-content">
-        <Background
-          src="/fishhed.webp"
-          alt="le fog"
-          height={1200}
-          width={1200}
-        />
-        <h1 className={`page-title ${specialElite.className}`}>le fog</h1>
+        <Background src="/fishhed.webp" alt="le fog" height={800} width={800} />
+        <h1
+          className={`page-title ${specialElite.className} underline underline-offset-8 decoration-2 max-w-sm`}
+        >
+          welcome. this is the website for le fog.
+        </h1>
       </main>
       <footer className="homepage-footer">
         <AudioProvider>

@@ -1,0 +1,31 @@
+.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: red solid 1px;
+  padding: 2.5rem;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  color: var(--text);
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+.icon {
+  animation: fadeInOut 13s infinite;
+  transition: opacity 3s ease-in-out;
+  padding: 1.4rem;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
