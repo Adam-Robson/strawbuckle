@@ -1,19 +1,19 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --text: #d6d6d6ff;
-    --background: #1f2421ff;
-    --primary: #bbb891ff;
-    --secondary: #757083ff;
-    --accent: #8c6057ff;
+    --text: #dddfdfff;
+    --background: #333333ff;
+    --primary: #779aacff;
+    --secondary: #f7ebe8ff;
+    --accent: #b36a64ff;
   }
 }
 
 @media screen and (prefers-color-scheme: light) {
   :root {
-    --text: #1f2421ff;
-    --background: #d6d6d6ff;
-    --primary: #757083ff;
-    --secondary: #bbb891ff;
-    --accent: #8c6057ff;
+    --background: #dddfdfff;
+    --text: #333333ff;
+    --primary: #779aacff;
+    --secondary: #f7ebe8ff;
+    --accent: #b36a64ff;
   }
 }

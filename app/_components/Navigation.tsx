@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./navigation.css";
-import { ruda } from "@/_fonts/fonts";
+import { spaceGrotesk } from "@/_fonts/fonts";
 
 export const pages = [
   {
@@ -36,7 +36,11 @@ export default function Navigation() {
       <div className="navigation-container">
         <nav className="navlinks">
           {pages.map(({ id, title, url }) => (
-            <Link key={id} href={url} className={`navlink ${ruda.variable}`}>
+            <Link
+              key={id}
+              href={url}
+              className={`navlink ${spaceGrotesk.variable}`}
+            >
               {title}
             </Link>
           ))}

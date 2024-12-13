@@ -9,7 +9,7 @@
 
 body {
   font-weight: 300;
-  font-family: var(--font-ruda);
+  font-family: var(--space-grotesk);
   overflow-y: hidden;
 }
 
@@ -26,12 +26,12 @@ a {
 a:hover {
   color: var(--accent);
   text-decoration: underline;
-  font-weight: 500;
+  font-weight: 400;
   translate: scale(1.1);
 }
 
 .button {
-  font-family: var(--font-ruda);
+  font-family: var(--space-grotesk);
   font-weight: 400;
   font-size: 1.1rem;
   color: var(--text);

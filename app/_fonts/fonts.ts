@@ -1,16 +1,15 @@
 import localFont from "next/font/local";
 
-const ruda = localFont({
-  src: "./Ruda/Ruda-VariableFont_wght.ttf",
-  variable: "--font-ruda",
+const fira = localFont({
+  src: "./Fira_Code/FiraCode-VariableFont_wght.ttf",
+  variable: "--fira-code",
   display: "swap",
 });
 
-const specialElite = localFont({
-  src: "./Special_Elite/SpecialElite-Regular.ttf",
-  variable: "--font-special-elite",
-  weight: "400",
+const spaceGrotesk = localFont({
+  src: "./Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf",
+  variable: "--space-grotesk",
   display: "swap",
 });
 
-export { ruda, specialElite };
+export { fira, spaceGrotesk };

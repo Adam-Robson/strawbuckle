@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       </div>
 
       <div className="flex flex-col justify-center items-center w-full max-w-lg mx-auto">
-        <Link href="/tetrix">tetrix</Link>
+        <Link href="./tetrix">tetrix</Link>
         <Link
           className="projects-page-link-item"
           href="https://github.com/Collabo-Team/collabo"

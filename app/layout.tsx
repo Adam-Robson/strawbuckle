@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { specialElite } from "@/_fonts/fonts";
+import { spaceGrotesk } from "@/_fonts/fonts";
 
 import "./globals.css";
 import "./colors.css";
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={specialElite.className}>
+    <html lang="en" className={spaceGrotesk.variable}>
       <body>{children}</body>
     </html>
   );

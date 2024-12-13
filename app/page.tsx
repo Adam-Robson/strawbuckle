@@ -4,7 +4,7 @@ import Background from "./_components/Background";
 import Logo from "./_components/Logo";
 import Navigation from "./_components/Navigation";
 import { AudioProvider } from "./_contexts/AudioProvider";
-import { specialElite } from "./_fonts/fonts";
+import { spaceGrotesk } from "./_fonts/fonts";
 import "./page.css";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <main className="homepage-content">
         <Background src="/fishhed.webp" alt="le fog" height={800} width={800} />
         <h1
-          className={`page-title ${specialElite.className} underline underline-offset-8 decoration-2 max-w-sm`}
+          className={`page-title ${spaceGrotesk.variable} underline underline-offset-8 decoration-2 max-w-sm`}
         >
           welcome. this is the website for le fog.
         </h1>
