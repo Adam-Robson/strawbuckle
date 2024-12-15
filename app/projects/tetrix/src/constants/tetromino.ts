@@ -1,45 +1,45 @@
 export const SHAPES = {
-  I: { shape: [[0, 1, 1, 1, 1, 0]], color: "#846a6aff" },
+  I: { shape: [[0, 1, 1, 1, 1, 0]], color: "#a6bdc9ff" },
   O: {
     shape: [
       [0, 0, 1, 1, 0, 0],
       [0, 0, 1, 1, 0, 0],
     ],
-    color: "#6c464eff",
+    color: "#3e5865ff",
   },
   T: {
     shape: [
       [0, 1, 1, 1, 0, 0],
       [0, 0, 1, 0, 0, 0],
     ],
-    color: "#be5a38ff",
+    color: "#779aacff",
   },
   S: {
     shape: [
       [0, 0, 1, 1, 0, 0],
       [0, 1, 1, 0, 0, 0],
     ],
-    color: "#be7c4dff",
+    color: "#c99692ff",
   },
   Z: {
     shape: [
       [0, 1, 1, 0, 0, 0],
       [0, 0, 1, 1, 0, 0],
     ],
-    color: "#a2999eff",
+    color: "#b36a64ff",
   },
   J: {
     shape: [
       [0, 1, 0, 0, 0, 0],
       [0, 1, 1, 1, 0, 0],
     ],
-    color: "#d0ce7cff",
+    color: "#6d3a36ff",
   },
   L: {
     shape: [
       [0, 0, 0, 1, 0, 0],
       [0, 1, 1, 1, 0, 0],
     ],
-    color: "#c7ac92ff",
+    color: "#884130ff",
   },
 };

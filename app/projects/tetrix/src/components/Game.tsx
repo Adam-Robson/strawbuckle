@@ -1,3 +1,4 @@
+"use client";
 import useTetromino from "../hooks/useTetromino";
 import Controls from "./Controls";
 import "./game.css";

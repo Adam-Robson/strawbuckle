@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 
-const fira = localFont({
-  src: "./Fira_Code/FiraCode-VariableFont_wght.ttf",
-  variable: "--fira-code",
+const source = localFont({
+  src: "./Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf",
+  variable: "--source-code-pro",
   display: "swap",
 });
 
@@ -12,4 +12,4 @@ const spaceGrotesk = localFont({
   display: "swap",
 });
 
-export { fira, spaceGrotesk };
+export { source, spaceGrotesk };

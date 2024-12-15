@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect, useCallback } from "react";
 import type { TTetromino } from "../types/tetromino";
 import { getRandomTetromino, rotateTetromino } from "../utils/tetromino";

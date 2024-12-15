@@ -15,12 +15,8 @@ export default function AudioPlayerToggle({
   return (
     <div className="audio-toggle-container">
       <button onClick={toggleAudioPlayer} className="audio-toggle-button">
-        {isVisible ? (
-          <PiX size={40} color="#593736" />
-        ) : (
-          <PiMusicNote size={48} color="#593736" />
-        )}
-        <label className="audio-toggle-label" style={{ color: "#593736" }}>
+        {isVisible ? <PiX size={40} /> : <PiMusicNote size={48} />}
+        <label className="audio-toggle-label">
           {isVisible ? "Hide Player" : "Show Player"}
         </label>
       </button>
