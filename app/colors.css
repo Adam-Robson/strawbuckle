@@ -1,29 +1,47 @@
-@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: light) {
   :root {
-    --text: #dddfdfff;
-    --background: #333333ff;
-    --primary: #779aacff;
-    --secondary: #f7ebe8ff;
-    --accent: #b36a64ff;
+    --text-0: #000000ff;
+    --text-1: #191919ff;
+    --text-2: #252323ff;
 
-    --seasalt: #f8f9faff;
-    --antiflash-white: #e9ecefff;
-    --platinum: #dee2e6ff;
-    --french-gray: #ced4daff;
-    --french-gray-2: #adb5bdff;
-    --slate-gray: #6c757dff;
-    --outer-space: #495057ff;
-    --onyx: #343a40ff;
-    --eerie-black: #212529ff;
+    --background-0: #e0e0e0ff;
+    --background-1: #f5f1edff;
+    --background-2: #eadedaff;
+
+    --primary-0: #393e41ff;
+    --primary-1: #70798cff;
+    --primary-2: #828e82ff;
+
+    --secondary-0: #a99985ff;
+    --secondary-1: #efc88bff;
+    --secondary-2: #dad2bcff;
+
+    --accent-0: #cf5c36ff;
+    --accent-1: #d5896fff;
+    --accent-2: #e4ad9bff;
   }
 }
 
-@media screen and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
   :root {
-    --background: #dddfdfff;
-    --text: #333333ff;
-    --primary: #779aacff;
-    --secondary: #f7ebe8ff;
-    --accent: #b36a64ff;
+    --text-0: #e0e0e0ff;
+    --text-1: #f5f1edff;
+    --text-2: #eadedaff;
+
+    --background-0: #000000ff;
+    --background-1: #191919ff;
+    --background-2: #252323ff;
+
+    --primary-0: #393e41ff;
+    --primary-1: #70798cff;
+    --primary-2: #828e82ff;
+
+    --secondary-0: #a99985ff;
+    --secondary-1: #efc88bff;
+    --secondary-2: #dad2bcff;
+
+    --accent-0: #cf5c36ff;
+    --accent-1: #d5896fff;
+    --accent-2: #e4ad9bff;
   }
 }
