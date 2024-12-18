@@ -1,9 +1,6 @@
 import React from "react";
-
 import type { IControlsProps } from "../types/controls";
-
 import Button from "./Button";
-
 import "./controls.css";
 
 export default function Controls({

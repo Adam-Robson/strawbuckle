@@ -1,19 +1,9 @@
-.stats {
-  position: absolute;
-  bottom: 5.5rem;
-  right: 0.5rem;
+.stats-container {
+  grid-column: 10 / 13;
+  grid-row: 5 / 6;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  justify-content: center;
-  text-align: left;
-  padding: 0.75rem;
-}
-
-.cleared,
-.level {
-  font-size: 1.1rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-  text-align: left;
+  padding: 1rem;
 }

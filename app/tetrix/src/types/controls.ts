@@ -19,7 +19,5 @@ export interface IControlsProps {
   togglePause?: () => void;
   resetGame: () => void;
   running: boolean;
-  clearedLines: number;
   handleStartGame: () => void;
-  level: number;
 }
