@@ -10,7 +10,6 @@
 body {
   font-weight: 300;
   font-family: var(--space-grotesk);
-  overflow-y: hidden;
 }
 
 a {
@@ -31,16 +30,21 @@ a:hover {
 }
 
 .button {
+  min-width: 60px;
+  max-width: 120px;
+  margin: 0 auto;
   font-family: var(--space-grotesk);
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: var(--text);
   background-color: var(--background);
   border: 1px solid var(--text);
-  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   z-index: 2;
+  text-align: center;
 }
 
 .button:hover {

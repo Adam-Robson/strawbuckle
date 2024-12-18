@@ -1,4 +1,4 @@
-export interface PreviewProps {
+export interface PreviewPieceProps {
   shape: number[][];
   color: string;
 }

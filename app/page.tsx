@@ -18,10 +18,8 @@ export default function Home() {
       </header>
       <main className="homepage-content">
         <Background src="/fishhed.webp" alt="le fog" height={800} width={800} />
-        <h1
-          className={`page-title ${spaceGrotesk.variable} underline underline-offset-8 decoration-2 max-w-sm`}
-        >
-          welcome. this is the website for le fog.
+        <h1 className={`page-title ${spaceGrotesk.variable}`}>
+          le fog. music for people.
         </h1>
       </main>
       <footer className="homepage-footer">

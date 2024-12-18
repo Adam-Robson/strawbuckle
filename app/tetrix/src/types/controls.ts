@@ -16,16 +16,10 @@ export interface IButtonProps {
 }
 
 export interface IControlsProps {
-  paused?: boolean;
   togglePause?: () => void;
   resetGame: () => void;
   running: boolean;
   clearedLines: number;
-  level: number;
-  gameOver: boolean;
-  nextPiece: {
-    shape: number[][];
-    color: string;
-  };
   handleStartGame: () => void;
+  level: number;
 }

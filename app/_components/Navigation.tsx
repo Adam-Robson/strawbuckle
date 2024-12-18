@@ -20,8 +20,8 @@ export const pages = [
   },
   {
     id: 4,
-    title: "projects",
-    url: "/projects",
+    title: "tetrix",
+    url: "/tetrix",
   },
   {
     id: 5,

@@ -1,5 +1,13 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+
+import {
+  createContext,
+  useState,
+  useEffect,
+  useCallback,
+  useContext,
+  ReactNode,
+} from "react";
 import type { TTetromino } from "../types/tetromino";
 import { getRandomTetromino, rotateTetromino } from "../utils/tetromino";
 import { TBoard } from "../types/board";
@@ -8,39 +16,41 @@ import {
   createEmptyBoard,
   clearFullLines,
 } from "../utils/board";
-import { calculateSpeed } from "../utils/game";
+import type { IGameContextProps } from "../types/game";
 
-export default function useTetromino() {
+const GameContext = createContext<IGameContextProps | undefined>(undefined);
+
+export const GameProvider = ({ children }: { children: ReactNode }) => {
   const [board, setBoard] = useState<TBoard>(createEmptyBoard());
   const [level, setLevel] = useState<number>(1);
-  const [score, setScore] = useState<number>(0);
-  const [speed, setSpeed] = useState<number>(1000);
   const [paused, setPaused] = useState<boolean>(false);
   const [running, setRunning] = useState<boolean>(false);
   const [gameOver, setGameOver] = useState<boolean>(false);
   const [clearedLines, setClearedLines] = useState<number>(0);
+  const [firstPieceHidden, setFirstPieceHidden] = useState(true);
   const [lastAnimationFrame, setLastAnimationFrame] = useState<number>(0);
   const [currentPiece, setCurrentPiece] = useState<{
     shape: number[][];
     color: string;
     position: { x: number; y: number };
   }>({ ...getRandomTetromino(), position: { x: 4, y: 0 } });
-  const [nextPiece, setNextPiece] = useState<Omit<TTetromino, "position">>(
-    getRandomTetromino()
-  );
+  const [nextPiece, setNextPiece] = useState<TTetromino>({
+    ...getRandomTetromino(),
+    position: { x: 4, y: 0 },
+  });
 
   const resetGame = () => {
     // Reset game to initial state
     setBoard(createEmptyBoard());
-    setSpeed(1000);
     setLevel(1);
     setLastAnimationFrame(0);
     setRunning(false);
     setPaused(false);
     setGameOver(false);
     setClearedLines(0);
-    setCurrentPiece({ ...getRandomTetromino(), position: { x: 4, y: 0 } });
+    setNextPiece({ ...getRandomTetromino(), position: { x: 4, y: 0 } });
     setNextPiece(getRandomTetromino());
+    setFirstPieceHidden(true);
   };
 
   const handleStartGame = () => {
@@ -52,7 +62,7 @@ export default function useTetromino() {
     setNextPiece(getRandomTetromino());
     setClearedLines(0);
     setLevel(1);
-    setSpeed(1000);
+    setFirstPieceHidden(false);
   };
 
   function togglePause() {
@@ -87,7 +97,6 @@ export default function useTetromino() {
         const totalCleared = prev + clearedRows;
         if (Math.floor(totalCleared / 10) > level - 1) {
           setLevel((prevLevel) => prevLevel + 1);
-          setSpeed(calculateSpeed(level + 1));
         }
         return totalCleared;
       });
@@ -165,7 +174,7 @@ export default function useTetromino() {
       if (gameOver || !running || paused) return;
 
       const elapsedTime = currentTime - lastAnimationFrame;
-      if (elapsedTime > speed) {
+      if (elapsedTime > 1000) {
         movePiece("down");
         setLastAnimationFrame(currentTime);
       }
@@ -174,7 +183,7 @@ export default function useTetromino() {
 
     animationFrameId = requestAnimationFrame(gameLoop);
     return () => cancelAnimationFrame(animationFrameId);
-  }, [lastAnimationFrame, running, gameOver, speed, paused, movePiece]);
+  }, [lastAnimationFrame, running, gameOver, paused, movePiece]);
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyPress);
@@ -183,35 +192,31 @@ export default function useTetromino() {
     };
   }, [handleKeyPress]);
 
-  return {
+  const contextValue = {
     board,
     level,
-    score,
-    speed,
     paused,
     running,
     gameOver,
     clearedLines,
-    lastAnimationFrame,
     currentPiece,
     nextPiece,
+    firstPieceHidden,
+    setFirstPieceHidden,
     resetGame,
     handleStartGame,
-    setBoard,
-    setLevel,
-    setScore,
-    setSpeed,
-    setPaused,
-    setRunning,
-    setGameOver,
-    setClearedLines,
-    setLastAnimationFrame,
-    setCurrentPiece,
-    setNextPiece,
     togglePause,
-    lockPiece,
-    movePiece,
-    rotatePiece,
-    handleKeyPress,
   };
-}
+
+  return (
+    <GameContext.Provider value={contextValue}>{children}</GameContext.Provider>
+  );
+};
+
+export const useGameContext = () => {
+  const context = useContext(GameContext);
+  if (!context) {
+    throw new Error("useGameContext must be used within a GameProvider");
+  }
+  return context;
+};
