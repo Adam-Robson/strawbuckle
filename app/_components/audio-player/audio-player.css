@@ -7,7 +7,7 @@
   max-width: 30rem;
   width: 100%;
   opacity: 0.85;
-  color: var(--text);
+  color: var(--text-1);
 }
 
 .audio-player-card {
@@ -22,8 +22,8 @@
   min-height: 23rem;
   visibility: hidden;
   z-index: 10;
-  background-color: var(--primary);
-  color: var(--text);
+  background-color: var(--primary-1);
+  color: var(--text-1);
   border-radius: 0.76rem;
   backdrop-filter: blur(13px);
   transition: all 1.5s ease-in-out;
@@ -38,7 +38,7 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.75s ease-in-out;
-  color: var(--background);
+  color: var(--background-1);
 }
 
 .audio-toggle-container {
@@ -90,10 +90,14 @@ input[type="range"] {
   appearance: none;
   width: 100%;
   height: 1rem;
-  background-color: var(--background);
-  border: var(--text) solid 1px;
+  background-color: var(--background-1);
+  border: var(--text-1) solid 1px;
   border-radius: 50px;
-  background-image: linear-gradient(to right, var(--text), var(--background));
+  background-image: linear-gradient(
+    to right,
+    var(--text-1),
+    var(--background-1)
+  );
   background-repeat: no-repeat;
 }
 
@@ -111,8 +115,8 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   height: 1rem;
   width: 1rem;
-  background-color: var(--background);
-  border: var(--text) solid 1px;
+  background-color: var(--background-1);
+  border: var(--text-1) solid 1px;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -129,8 +133,8 @@ input[type="range"]::-moz-range-track {
 input[type="range"]::-moz-range-thumb {
   height: 1rem;
   width: 1rem;
-  background-color: var(--text);
-  border: var(--text) 2px solid;
+  background-color: var(--text-1);
+  border: var(--text-1) 2px solid;
   border-radius: 50%;
   cursor: pointer;
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./instructions.css";
+import Button from "./Button";
 
 export default function Instructions() {
   const [visible, setVisible] = useState(false);
@@ -11,9 +12,7 @@ export default function Instructions() {
 
   return (
     <div className="instructions-container">
-      <button onClick={toggleVisibility} className="instructions-button">
-        Instructions
-      </button>
+      <Button onClick={toggleVisibility} text="Instructions" />
       <div className={`instructions-card ${visible ? "visible" : ""}`}>
         <h3 className="instructions-title">Instructions</h3>
         <ol className="instructions">

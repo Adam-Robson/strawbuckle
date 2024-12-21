@@ -4,7 +4,6 @@ import Background from "./_components/Background";
 import Logo from "./_components/Logo";
 import Navigation from "./_components/Navigation";
 import { AudioProvider } from "./_contexts/AudioProvider";
-import { spaceGrotesk } from "./_fonts/fonts";
 import "./page.css";
 
 export default function Home() {
@@ -18,9 +17,9 @@ export default function Home() {
       </header>
       <main className="homepage-content">
         <Background src="/fishhed.webp" alt="le fog" height={800} width={800} />
-        <h1 className={`page-title ${spaceGrotesk.variable}`}>
-          le fog. music for people.
-        </h1>
+        <span className="headline z-10">
+          le fog. music for people who like it.
+        </span>
       </main>
       <footer className="homepage-footer">
         <AudioProvider>

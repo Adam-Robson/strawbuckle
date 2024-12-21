@@ -7,3 +7,14 @@
   align-items: center;
   gap: 0.6rem;
 }
+
+.button {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: var(--text-0);
+  border-radius: 0.3rem;
+  background-color: var(--background-0);
+  color: var(--text-0);
+  cursor: pointer;
+  z-index: 1;
+}

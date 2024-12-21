@@ -1,47 +1,49 @@
 @media screen and (prefers-color-scheme: light) {
   :root {
-    --text-0: #000000ff;
-    --text-1: #191919ff;
-    --text-2: #252323ff;
-
-    --background-0: #e0e0e0ff;
+    --text-0: #141414ff;
+    --text-1: #1b1b1eff;
+    --text-2: #2a2d34ff;
+    --text-3: #323031ff;
+    --primary-0: #3e4e5cff;
+    --primary-1: #6b6d76ff;
+    --primary-2: #70798cff;
+    --primary-3: #868b92ff;
+    --secondary-0: #796d66ff;
+    --secondary-1: #a99985ff;
+    --secondary-2: #a6a090ff;
+    --secondary-3: #c9cba3ff;
+    --background-0: #e0dfd5ff;
     --background-1: #f5f1edff;
-    --background-2: #eadedaff;
-
-    --primary-0: #393e41ff;
-    --primary-1: #70798cff;
-    --primary-2: #828e82ff;
-
-    --secondary-0: #a99985ff;
-    --secondary-1: #efc88bff;
-    --secondary-2: #dad2bcff;
-
-    --accent-0: #cf5c36ff;
+    --background-2: #fcffebff;
+    --background-3: #f8fff4ff;
+    --accent-0: #e4ad9bff;
     --accent-1: #d5896fff;
-    --accent-2: #e4ad9bff;
+    --accent-2: #d77a61ff;
+    --accent-3: #cf5c36ff;
   }
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --text-0: #e0e0e0ff;
+    --text-1: #1b1b1eff;
+    --background-1: #1b1b1eff;
+    --background-2: #2a2d34ff;
+    --background-3: #323031ff;
+    --primary-0: #3e4e5cff;
+    --primary-1: #6b6d76ff;
+    --primary-2: #70798cff;
+    --primary-3: #7d8491ff;
+    --secondary-0: #796d66ff;
+    --secondary-1: #a99985ff;
+    --secondary-2: #a6a090ff;
+    --secondary-3: #c9cba3ff;
+    --text-0: #e0dfd5ff;
     --text-1: #f5f1edff;
-    --text-2: #eadedaff;
-
-    --background-0: #000000ff;
-    --background-1: #191919ff;
-    --background-2: #252323ff;
-
-    --primary-0: #393e41ff;
-    --primary-1: #70798cff;
-    --primary-2: #828e82ff;
-
-    --secondary-0: #a99985ff;
-    --secondary-1: #efc88bff;
-    --secondary-2: #dad2bcff;
-
-    --accent-0: #cf5c36ff;
+    --text-2: #fcffebff;
+    --text-3: #f8fff4ff;
+    --accent-0: #e4ad9bff;
     --accent-1: #d5896fff;
-    --accent-2: #e4ad9bff;
+    --accent-2: #d77a61ff;
+    --accent-3: #cf5c36ff;
   }
 }
