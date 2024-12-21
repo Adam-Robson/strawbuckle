@@ -10,7 +10,7 @@ export default function Controls({
   handleStartGame,
 }: IControlsProps) {
   return (
-    <div className="controls-container">
+    <div className="buttons">
       {running && togglePause && (
         <Button onClick={togglePause} text={`Pause`} />
       )}

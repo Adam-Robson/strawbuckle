@@ -21,19 +21,18 @@ export default function Tetrix() {
 
   return (
     <div className="tetrix-container">
-      <Instructions />
+      <h1 className="title">Tetrix</h1>
       <PreviewPiece shape={nextPiece.shape} color={nextPiece.color} />
+      <Stats clearedLines={clearedLines} level={level} />
 
       <Game />
-
       <Controls
         running={running}
         resetGame={resetGame}
         handleStartGame={handleStartGame}
         togglePause={togglePause}
       />
-
-      <Stats clearedLines={clearedLines} level={level} />
+      <Instructions />
     </div>
   );
 }

@@ -25,7 +25,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --text-1: #1b1b1eff;
+    --background-0: #141414ff;
     --background-1: #1b1b1eff;
     --background-2: #2a2d34ff;
     --background-3: #323031ff;

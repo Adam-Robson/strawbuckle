@@ -1,6 +1,6 @@
 import { GameProvider } from "@/tetrix/src/context/GameContext";
 import Tetrix from "@/tetrix/src/components/Tetrix";
-import "./tetrix.css";
+import "./tetrix-page.css";
 
 export default function Page() {
   return (
