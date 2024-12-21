@@ -1,18 +1,15 @@
 import localFont from "next/font/local";
 
-const sofia = localFont({
-  src: "./Sofia_Sans_Semi_Condensed/SofiaSansSemiCondensed-VariableFont_wght.ttf",
-  variable: "--font-sofia",
+const source = localFont({
+  src: "./Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf",
+  variable: "--source-code-pro",
+  display: "swap",
 });
 
-const sofia_italic = localFont({
-  src: "./Sofia_Sans_Semi_Condensed/SofiaSansSemiCondensed-Italic-VariableFont_wght.ttf",
-  variable: "--font-sofia-italic",
+const spaceGrotesk = localFont({
+  src: "./Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf",
+  variable: "--space-grotesk",
+  display: "swap",
 });
 
-const specialElite = localFont({
-  src: "./Special_Elite/SpecialElite-Regular.ttf",
-  variable: "--font-special-elite",
-});
-
-export { sofia, sofia_italic, specialElite };
+export { source, spaceGrotesk };

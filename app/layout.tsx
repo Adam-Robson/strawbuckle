@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { sofia, sofia_italic, specialElite } from "@/_fonts/fonts";
+import { spaceGrotesk } from "@/_fonts/fonts";
+
 import "./globals.css";
+import "./colors.css";
+import "./page.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,12 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${sofia.variable} ${sofia_italic.variable} ${specialElite.variable}`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={spaceGrotesk.variable}>
+      <body>{children}</body>
     </html>
   );
 }
